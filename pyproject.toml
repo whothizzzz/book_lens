@@ -1,0 +1,9 @@
+[project]
+name = "book-lens"
+version = "0.1.0"
+description = "BookLens: Semantic Multilingual Book Recommendation Engine"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.vercel]
+entrypoint = "index.py"
