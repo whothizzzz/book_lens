@@ -1,0 +1,6 @@
+# Default theme. Users can still switch to Streamlit's built-in light/dark
+# presets from the app's own Settings menu (top-right ⋮) - this just sets
+# what a fresh session starts with, and gives the light preset BookLens'
+# accent color (matches ACCENT_COLOR in app/config.py).
+[theme]
+primaryColor = "#F97316"

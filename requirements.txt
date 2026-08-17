@@ -1,0 +1,36 @@
+# Core Data & Numerical Computing
+pandas
+numpy
+scikit-learn
+
+# Web Application Framework
+streamlit
+
+# Vector Database
+chromadb
+
+# Embeddings, Deep Learning, & Zero-Shot Classification
+torch
+torchvision
+transformers
+sentence-transformers
+
+# API & Web Augmentation
+requests
+python-dotenv
+
+# Transliteration (Devanagari -> Roman script)
+indic-transliteration
+
+# Data Visualization
+plotly
+matplotlib
+
+# Jupyter Notebook Execution
+jupyter
+nbconvert
+ipykernel
+
+# Hugging Face Datasets (required for fine-tuning pipeline)
+datasets
+
