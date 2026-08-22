@@ -60,10 +60,6 @@ cp .env.example .env
 To start the Streamlit web dashboard:
 
 ```bash
-python scripts/run_dashboard.py
-```
-*Alternatively, run directly with Streamlit:*
-```bash
 streamlit run Dashboard.py
 ```
 
@@ -74,22 +70,6 @@ Open your browser at `http://localhost:8501`.
 ## ⚙️ Offline Pipeline & Notebooks
 
 BookLens uses a two-stage architecture: an **offline pipeline** for data preparation, embedding generation, and model training, and an **online app** for low-latency recommendations.
-
-### Run Full Pipeline
-To run all stages end-to-end (`01` through `05`):
-
-```bash
-python scripts/run_pipeline.py
-```
-
-### Pipeline Options
-```bash
-# Run pipeline and immediately launch the dashboard on completion:
-python scripts/run_pipeline.py --then-run-dashboard
-
-# Resume pipeline from a specific stage:
-python scripts/run_pipeline.py --from-stage embeddings --to-stage train_classifiers
-```
 
 ### Notebook Stages:
 - `notebooks/01_data_ingestion.ipynb`: Merges and cleans multi-source book datasets.
@@ -109,7 +89,6 @@ book_lens/
 ├── data/                # Processed catalog, spot check data, and vector index (local)
 ├── models/              # Trained weights (.npz, .npy) and metrics (local)
 ├── notebooks/           # Offline data ingestion, indexing, and training notebooks
-├── scripts/             # CLI runners (run_dashboard.py, run_pipeline.py)
 ├── src/                 # ML from scratch, persona engine, and live API tools
 ├── Dashboard.py         # Streamlit main entry point
 ├── requirements.txt     # Complete Python dependencies
